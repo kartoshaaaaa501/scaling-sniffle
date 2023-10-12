@@ -1,0 +1,29 @@
+import random
+
+
+def generator (chislo):
+    chislo1 = chislo
+    math = ['-', '/', '*', '+']
+    result = []
+    while (chislo > 0):
+        x = random.randint(-150,150)
+        y = random.randint(-150,150)
+        znac = random.choice(math)
+        primer = str(x) + znac + str(y)
+        eval(primer)
+        chislo -= 1
+        result.append(primer)
+    print (result)
+    return result
+    
+generator (int(input()))
+
+
+def proverca (otvet):
+    x = 0
+    y = 0
+    while (x < chislo1):
+        if [otvet[x] == eval(list[x])]:
+            print ("правильно")
+            y += 1
+        x += 1
