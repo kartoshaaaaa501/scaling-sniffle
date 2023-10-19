@@ -37,6 +37,5 @@ def generator (chislo, ur):
             eval(primer)
             chislo -= 1
             result.append(primer)
-    print (result)
     return result
 
