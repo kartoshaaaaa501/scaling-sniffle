@@ -17,7 +17,7 @@ def generator (chislo):
     print (result)
     return result
     
-generator (int(input()))
+#enerator (int(input()))
 
 
 def proverca (primer, otvet):
