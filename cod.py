@@ -1,6 +1,5 @@
 import random
 
-
 def generator (chislo, ur):
     if ur == 2:
         math = ['-', '/', '*', '+']
@@ -40,8 +39,4 @@ def generator (chislo, ur):
             result.append(primer)
     print (result)
     return result
-generator (int(input()), int(input()))
-def proverca (primer, otvet):
-    if [otvet == eval(primer)]:
-        print ("правильно")
 
