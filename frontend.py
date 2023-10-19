@@ -7,22 +7,19 @@ from cod import generator
 #           l.append(f"{random.randint(0, 10)} + {random.randint(0, 10)}")
 #       return l
 
+
 name = input("your name\n")
 print (f" Hello, {name}") 
 
 print (f" How many examples would you like?" )
 n = int (input())
-print (f"")
+print (f"какой уровень?")
 ur = int(input())
-tasks = generator(n)
 
-for i in range (len (tasks)):
-    print(tasks[i])
-  Answer =int(input())
-
-
-while x < generator(n,ur):
-	a = generator(n,ur)[x]
+tasks = generator(n, ur)
+x = 0
+while x < len(tasks):
+	a = tasks[x]
 	print (a)
 	otvet = int(input())
 	if otvet == eval(a):
